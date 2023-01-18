@@ -12,7 +12,7 @@ The function creationMatrix.m generates the final derivatives matrix, DerInputs 
 REGRESSION NEURAL NETWORKS AND INDIVIDUATION OF THE SAMPLES OF INTEREST
 For applying LIME and SHAP the optimal RNNs have been obtained with the optimization of the hyperparameters.
 For this aim, the scripts regRNN.m and derRNN.m were created.
-Observe! In these scripts also LIME method in then implmeted.
+Observe! In these scripts also LIME method is then implemented.
 The first step is the partition of the dataset randomply in 80% for the training and the remaining 20% for the test.
 fitrnet command was used for obtaining the rnn variables.
 The peaks variables individuate the values of the outputs which are greater or equal to 3, and those which are less or equal to -3.
