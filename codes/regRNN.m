@@ -20,8 +20,8 @@ outputsTest=RegOutputs(end_learn+1:end,:);
 
 outputs_learn=predict(rnn,inputsTrain);
 outputs_test=predict(rnn,inputsTest);
-coefficientT=rms(outputsTest-outputs_test)
-coefficientL=rms(outputsTrain-outputs_learn)
+coefficientT=corrcoef(outputsTest,outputs_test)
+coefficientL=corrcoef(outputsTrain,outputs_learn)
 
 figure,plot([outputsTrain outputs_learn])
 % title('Regressors matrix- Learning')
