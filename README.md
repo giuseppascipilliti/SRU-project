@@ -23,10 +23,10 @@ Definitely the variable samp contains all the samples of interest.
 
 LIME:
 In regRNN.m and derRNN.m LIME approach is implemented.
-The command lime permits to obtain LimeResult variable which can be fitted for each queary point (the previous selected samples) of interest.
-At this point, the vatriable Lime is created were Lime.Index contains the index of the sample selected, and Lime.ImportantPredictors contains the important predictors with the corresponding beta-values. 
+The command lime permits to obtain LimeResult variable which can be fitted for each query point (the previous selected samples) of interest.
+At this point, the variable Lime is created were Lime.Index contains the index of the sample selected, and Lime.ImportantPredictors contains the important predictors with the corresponding beta-values. 
 Note! Lime variable is not the direct result of the fit command applied to LimeResult, instead it is the res variable which is too large to be inserted here.
-At the end, LimeMatrix was constructed which is a matrix containing the index of the sample of interest, the corresponding important preictors and the label 'peak' that indicates if the sample is a peak or a close sample.
+At the end, LimeMatrix was constructed which is a matrix containing the index of the sample of interest, the corresponding important predictors and the label 'peak' that indicates if the sample is a peak or a close sample.
 
 
 SHAPLEY VALUES:
