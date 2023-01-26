@@ -3,8 +3,8 @@ ShapResults=shapley(rnn,inputsTrain,'UseParallel',true);
 
 idx=1;
 for i=1:length(samp)
-        res(idx,1)=fit(ShapResults,RegInputs(samp(i,1)-9,:));
-         ShapValues{idx,1}.Index=samp(i,1)-9;
+        res(idx,1)=fit(ShapResults,RegInputs(samp(i,1),:));
+         ShapValues{idx,1}.Index=samp(i,1);
          [~,I] = sort(abs(res(idx,1).ShapleyValues.ShapleyValue),'descend');
          ShapValues{idx,1}.shapvalues=[names(I)' res(idx,1).ShapleyValues.ShapleyValue(I)];
           clear I
